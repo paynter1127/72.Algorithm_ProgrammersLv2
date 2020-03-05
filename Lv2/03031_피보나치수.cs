@@ -8,7 +8,7 @@ namespace Lv2
 {
     class _03031_피보나치수
     {
-        static void Main(string[] args)
+        static void Main_03031(string[] args)
         {
             Console.WriteLine("hello world");
 
