@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="03041_탑.cs" />
+    <Compile Include="03091_기능개발.cs" />
     <Compile Include="흠.03021_N개의최소공배수.cs" />
     <Compile Include="03031_피보나치수.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

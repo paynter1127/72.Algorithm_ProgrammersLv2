@@ -29,36 +29,39 @@ namespace Lv2
 
             for (int i = 0; i < heights.Length; i++) Console.WriteLine(Solution.solution(heights)[i]);
         }
-    }
 
-    public class Solution
-    {
-         public static int[] solution(int[] heights)
+        public class Solution
         {
-            int[] answer = new int[] { };
-
-            int size = heights.Length;
-            Array.Resize(ref answer, size);
-
-            for(int i = size - 1; i >= 0; i--)
+            public static int[] solution(int[] heights)
             {
-                for(int j = i - 1; j >= 0; j--)
+                int[] answer = new int[] { };
+
+                int size = heights.Length;
+                Array.Resize(ref answer, size);
+
+                for (int i = size - 1; i >= 0; i--)
                 {
-                    if(heights[i] < heights[j])
+                    for (int j = i - 1; j >= 0; j--)
                     {
-                        answer[i] = j + 1;
-                        break;
-                    }
-                    if(j == 0)
-                    {
-                        answer[i] = 0;
-                        break;
+                        if (heights[i] < heights[j])
+                        {
+                            answer[i] = j + 1;
+                            break;
+                        }
+                        if (j == 0)
+                        {
+                            answer[i] = 0;
+                            break;
+                        }
                     }
                 }
-            }
-            
 
-            return answer;
+
+                return answer;
+            }
         }
+
     }
+
+    
 }
