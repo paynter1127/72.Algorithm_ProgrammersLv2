@@ -13,7 +13,7 @@ namespace Lv2
             Console.WriteLine("hello world");
 
             Solution sol = new Solution();
-            Console.WriteLine(sol.solution(50));
+            Console.WriteLine(sol.solution(50)); 
         }
 
 
