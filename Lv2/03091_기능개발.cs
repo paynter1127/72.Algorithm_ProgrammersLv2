@@ -15,11 +15,11 @@ using System.Threading.Tasks;
  * - 배포는 하루 한번, 하루 개발 끝에 배포
  */
 
-namespace Lv2
+namespace Lv111
 {
     class _03091_기능개발
     {
-        public static void Main(string[] args)
+        public static void Main_03091(string[] args)
         {
             Console.WriteLine("테스트");
 
